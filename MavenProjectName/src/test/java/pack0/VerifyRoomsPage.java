@@ -82,7 +82,7 @@ public class VerifyRoomsPage {
 	@AfterMethod
 	public void afterMethod() {
 		System.out.println("After Method");
-		System.out.println("LOGOUT");
+		System.out.println("LOGOUT APP");
 	}
 	
 	@AfterClass
