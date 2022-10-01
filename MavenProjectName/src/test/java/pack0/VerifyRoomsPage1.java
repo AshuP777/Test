@@ -34,7 +34,7 @@ public class VerifyRoomsPage1 extends Base{
 	public void openBrowser(String browserName) {
 		System.out.println("browserName");
 		
-	/*	if(browserName.equals("Chrome"))
+	/*	if(browserName.equals("Crome"))
 		{
         driver = openChromeBrowser();
 		}

@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="classes" name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="CromeTest(failed)">
+    <parameter name="browser" value="Crome"/>
+    <classes>
+      <class name="pack0.VerifyRoomsPage2">
+        <methods>
+          <include name="verifygoBackToMessengerButton"/>
+          <include name="openRoomPage"/>
+          <include name="openBrowser"/>
+          <include name="creatPOMObject"/>
+          <include name="afterClass"/>
+          <include name="verifycontactToHelpCenterButton"/>
+          <include name="afterMethod"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- pack0.VerifyRoomsPage2 -->
+      <class name="pack0.VerifyRoomsPage1">
+        <methods>
+          <include name="creatPOMObject"/>
+          <include name="afterClass"/>
+          <include name="openRoomPage"/>
+          <include name="openBrowser"/>
+          <include name="afterMethod"/>
+          <include name="verifycontactToHelpCenterButton"/>
+          <include name="closeBrowser"/>
+          <include name="verifygoBackToMessengerButton"/>
+        </methods>
+      </class> <!-- pack0.VerifyRoomsPage1 -->
+    </classes>
+  </test> <!-- CromeTest(failed) -->
   <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
